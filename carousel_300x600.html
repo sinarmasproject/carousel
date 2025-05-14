@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fixed Slider 300x600</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  <style>
+    body {
+    font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: transparent;
+    }
+
+    .slider-container {
+      width: 300px;
+      height: 600px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slider {
+      width: 100%;
+      height: 100%;
+    }
+
+    .slider-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slider-item img,
+.slider-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-bg-box {
+  width: 300px;
+  height: 600px;
+  background-image: url('https://images2.imgbox.com/96/f8/g7wILRzT_o.jpeg');
+  display: flex;
+  justify-content: center;  /* center horizontal */
+  align-items: center;      /* center vertical */
+  position: relative;
+  overflow: hidden;
+}
+
+.video-bg-box video {
+  /* width: 100%;
+  height: 400px;
+  max-height: 100%;
+  margin: 0 20px; */
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+/* Tombol CTA */
+.cta-btn {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background-color: rgba(0, 123, 255, 0.9); */
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 10;
+}
+
+    /* Slick arrow default styling */
+    .slick-prev,
+    .slick-next {
+      z-index: 1;
+      width: 30px;
+      height: 30px;
+      /* background: rgba(0, 0, 0, 0.4); */
+      border-radius: 50%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      font-size: 20px;
+      color: #fff;
+    }
+
+    /* Position the arrows inside the container */
+    .slick-prev {
+      left: 10px;
+    }
+
+    .slick-next {
+      right: 10px;
+    }
+
+    /* Dots styling */
+    .slick-dots {
+      bottom: 10px;
+    }
+
+    .slick-dots li button:before {
+      font-size: 10px;
+      color: #fff;
+    }
+
+    .slick-dots li.slick-active button:before {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+    <script>
+        var clickTag = "https://erigostore.co.id/?srsltid=AfmBOorXcj2mY_MKUbliSY9eBBwYQe7e1vVlGRSgc4qDvNJATfTRVKIk";
+    </script>
+
+<div class="slider-container">
+  <div class="slider">
+    <div class="slider-item">
+      <a href="https://activity.kompas.com/baca-cepat/xplore/lestari/read/2025/02/18/183759686/tingkatkan-produktivitas-ini-inovasi-april-group-dalam-pengelolaan-hutan?utm_source=Banner&utm_campaign=xploreboosting" target="_blank">
+        <img src="https://images2.imgbox.com/96/f8/g7wILRzT_o.jpeg" alt="Image 1">
+        <a href="https://activity.kompas.com/baca-cepat/xplore/lestari/read/2025/02/18/183759686/tingkatkan-produktivitas-ini-inovasi-april-group-dalam-pengelolaan-hutan?utm_source=Banner&utm_campaign=xploreboosting" class="cta-btn" target="_blank">Klik di sini</a>
+      </a>
+    </div>
+    <div class="slider-item">
+      <a href="https://activity.kompas.com/baca-cepat/xplore/lifestyle/read/2025/04/21/111133720/bukan-sekadar-kado-rayakan-ulang-tahun-dengan-hadiah-personal-simbolik-dan?utm_source=Banner&utm_campaign=xploreboosting" target="_blank">
+        <img src="https://images2.imgbox.com/bf/cc/wD9LrgeX_o.jpeg" alt="Image 2">
+        <a href="https://activity.kompas.com/baca-cepat/xplore/lifestyle/read/2025/04/21/111133720/bukan-sekadar-kado-rayakan-ulang-tahun-dengan-hadiah-personal-simbolik-dan?utm_source=Banner&utm_campaign=xploreboosting" class="cta-btn" target="_blank">Klik di sini</a>
+      </a>
+    </div>
+    <div class="slider-item">
+        <div class="video-bg-box">
+          <a href="https://google.com" target="_blank">
+            <video autoplay muted loop width="300" height="600" playsinline>
+              <source src="https://mockup.hahabid.com/slider/telur.mp4" type="video/mp4">
+            </video>
+            <a href="https://google.com" class="cta-btn" target="_blank">Klik di sini</a>
+          </a>
+        </div>
+</div>
+<!-- <div class="slider-item">
+    <a href="https://youtube.com" target="_blank">
+      <img src="https://mockup.hahabid.com/slider/cg.gif">
+      <a href="https://youtube.com" class="cta-btn" target="_blank">Klik di sini</a>
+    </a>
+  </div> -->
+  <div class="slider-item">
+    <div class="video-bg-box">
+    <a href="https://google.com" target="_blank">
+      <video autoplay muted loop playsinline>
+        <source src="https://mockup.hahabid.com/slider/sml.mp4" type="video/mp4">
+      </video>
+      <a href="https://google.com" class="cta-btn" target="_blank">Klik di sini</a>
+    </a>
+    </div>
+</div>
+
+</div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+  $('.slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 8000,
+    arrows: true,       // enable prev/next
+    dots: true,         // enable dots
+    infinite: true
+  });
+</script>
+
+</body>
+</html>
