@@ -59,9 +59,9 @@
 
         .video-bg-box video {
             /* width: 100%;
-  height: 400px;
-  max-height: 100%;
-  margin: 0 20px; */
+            height: 400px;
+            max-height: 100%;
+            margin: 0 20px; */
             max-width: 100%;
             height: auto;
             width: 100%;
@@ -70,18 +70,27 @@
         /* Tombol CTA */
         .cta-btn {
             position: absolute;
-            bottom: 40px;
+            bottom: 130px;
             left: 50%;
             transform: translateX(-50%);
-            /* background-color: rgba(0, 123, 255, 0.9); */
-            background-color: blue;
+            background-color: rgba(0, 0, 255, 0.6); /* Biru semi-transparan */
             color: white;
             padding: 10px 20px;
             text-decoration: none;
-            border-radius: 6px;
-            font-size: 14px;
+            border-radius: 8px;
             font-weight: bold;
+            font-size: 14px;
             z-index: 10;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: rgba(0, 0, 255, 0.85); /* Lebih pekat saat hover */
+            transform: translateX(-50%) scale(1.05); /* Tetap di tengah + efek zoom */
+            cursor: pointer;
         }
 
         /* Slick arrow default styling */
