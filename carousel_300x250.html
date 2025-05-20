@@ -20,10 +20,10 @@
         }
 
         .slider-container {
-            width: 300px;
+            width: 375px;
             height: 250px;
             position: relative;
-            overflow: hidden;
+            overflow: visible;
         }
 
         .slider {
@@ -32,6 +32,7 @@
         }
 
         .slider-item {
+            padding: 0 5px;
             position: relative;
             width: 100%;
             height: 100%;
@@ -40,8 +41,9 @@
         .slider-item img,
         .slider-item video {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            height: auto;
+            display: block;
+            border-radius: 8px;
         }
 
         .video-bg-box {
@@ -209,9 +211,8 @@
             arrows: true, // enable prev/next
             dots: true, // enable dots
             infinite: true,
-            fade: true, // fade transition
-            cssEase: 'ease-in-out',
-            speed: 800
+            centerMode: true,
+            centerPadding: '30px'
         });
     </script>
 
